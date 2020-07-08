@@ -9,7 +9,7 @@
 <body>
 
 
-<form action = "/board/board_insert_ok.jsp">
+<form action = "/board.do" method="post">
 
 제목 : <input type="text" name="title"><br>
 내용 : <input name="content"></textarea><br>
