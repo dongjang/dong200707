@@ -1,31 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+    <%@ include file="/for/common.jsp"  %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
+
 <body>
-1<br>
-<!--  HTML 주석 -->
+1.jsp<br>
+<%=request.getParameter("name") %>
+
+
 <%
 
 
-// 자바 한 줄 주석
-/*
-
-자바 여러 줄 주석
-
-*/
-
-
-
-
-
-
-
-
+RequestDispatcher rd= request.getRequestDispatcher("/for/2.jsp");
+ rd.forward(request, response);
 
 %>
 
